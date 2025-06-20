@@ -29,11 +29,11 @@ int main(int ac, char **av)
 
     if(ac == 4)
     {
-        str = std::string(av[1]) + ".replace";
-        file.open(std::string(av[1]),std::ios::in);
+        str =std::string(av[1]) + ".replace";
+        file.open(av[1], std::ios::in);
         if(file.is_open())
         {
-            nfile.open(str,std::ios::out | std::ios::trunc);
+            nfile.open(str.c_str(),std::ios::out | std::ios::trunc);
             if(nfile.is_open())
                 fct_replace(av[2],av[3],file,nfile);
             else{
