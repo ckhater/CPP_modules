@@ -3,7 +3,7 @@
 
 #include<iostream>
 
-template<typename T> void iter(T *arr, int length, void (*f)(T &)) {
+template<typename T, typename T2> void iter(T *arr, int length, void (*f)(T2 &)) {
     for(int i = 0; i < length; i++){
         f(arr[i]);
     }
