@@ -14,11 +14,11 @@ template<typename T> class MutantStack : public std::stack<T> {
     }
     ~MutantStack(){}
     typedef typename std::deque<T>::iterator iterator; 
-    typename std::deque<T>::iterator begin() {
+    iterator begin() {
         return this->c.begin();
     }
 
-    typename std::deque<T>::iterator end() {
+    iterator end() {
         return this->c.end();
     }
 };

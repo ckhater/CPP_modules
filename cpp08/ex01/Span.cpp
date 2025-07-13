@@ -1,9 +1,9 @@
 #include"Span.hpp"
 
-// Span::Span(void){
-// 	size = 0;
-// 	it = 0;
-// }
+Span::Span(void){
+	size = 0;
+	it = 0;
+}
 
 Span::Span(unsigned int n){
 	size = n;

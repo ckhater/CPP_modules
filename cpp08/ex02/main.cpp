@@ -38,6 +38,5 @@ while (it != ite)
     ++it;
 }
 
-
 return 0;
 }

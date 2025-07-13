@@ -10,12 +10,12 @@
 
 class Span{
 	private:
-		Span(void);
 		unsigned int		size;
 		unsigned int		it;
 		std::vector<int>	arr;
 		std::vector<int>	sarr;
 	public:
+		Span(void);
 		Span(unsigned int n);
 		Span(const Span &sp);
 		Span &operator=(const Span &sp);
