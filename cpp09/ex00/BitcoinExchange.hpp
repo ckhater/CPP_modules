@@ -14,10 +14,10 @@
 
 class MyError : public std::exception{
     private:
+    std::string msg;
+    public:
         MyError(const MyError &err);
         MyError &operator=(const MyError &err);
-        std::string msg;
-    public:
         MyError(std::string m);
         const char * what() const throw();
         ~MyError() throw();

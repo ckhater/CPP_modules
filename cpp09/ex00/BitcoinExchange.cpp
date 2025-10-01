@@ -6,7 +6,6 @@ MyError::MyError(const MyError &err):std::exception(err){
     this->msg = err.msg;
 }
 
-MyError::MyError(const MyError &err){}
 MyError &MyError::operator=(const MyError &err){
     std::exception::operator=(err);
     this->msg = err.msg;
